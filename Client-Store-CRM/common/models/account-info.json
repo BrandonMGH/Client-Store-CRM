@@ -34,7 +34,7 @@
       "type": "string",
       "required": true
     },
-    "county": {
+    "country": {
       "type": "string",
       "required": true
     },
