@@ -1,0 +1,90 @@
+{
+  "name": "AccountInfo",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "companyName": {
+      "type": "string",
+      "required": true
+    },
+    "companyDescription": {
+      "type": "string",
+      "required": true
+    },
+    "companySize": {
+      "type": "number",
+      "required": true
+    },
+    "contactName": {
+      "type": "string",
+      "required": true
+    },
+    "contactTitle": {
+      "type": "string",
+      "required": true
+    },
+    "contactPhoneNumber": {
+      "type": "number",
+      "required": true
+    },
+    "contactEmail": {
+      "type": "string",
+      "required": true
+    },
+    "county": {
+      "type": "string",
+      "required": true
+    },
+    "streetAddress": {
+      "type": "string",
+      "required": true
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "state": {
+      "type": "string",
+      "required": true
+    },
+    "zipCode": {
+      "type": "number",
+      "required": true
+    },
+    "year": {
+      "type": "number",
+      "required": true
+    },
+    "Annual": {
+      "type": "number",
+      "required": true
+    },
+    "Q1": {
+      "type": "number",
+      "required": true
+    },
+    "Q2": {
+      "type": "number",
+      "required": true
+    },
+    "Q3": {
+      "type": "number",
+      "required": true
+    },
+    "Q4": {
+      "type": "number",
+      "required": true
+    },
+    "companySalesPerson": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
