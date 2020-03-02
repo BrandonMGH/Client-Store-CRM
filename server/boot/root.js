@@ -10,6 +10,9 @@ module.exports = function(server) {
   const router = server.loopback.Router();
   router.use(server.loopback.static( 'dist' ));
   router.get('/status', server.loopback.status());
+  router.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../../dist/Index.html')); // relative path
+});
 
   server.use(router);
 };
