@@ -7,7 +7,7 @@ import App from './src/App.js'
 export const Index = () => {
     return (
         <div>
-            <App />
+           Test
         </div>
     )
 }
