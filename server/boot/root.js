@@ -8,11 +8,13 @@
 module.exports = function(server) {
   // Install a `/` route that returns server status
   const router = server.loopback.Router();
+  const path = require('path')
   router.use(server.loopback.static( 'dist' ));
   router.get('/status', server.loopback.status());
   router.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../../dist/Index.html')); // relative path
-});
+    res.sendFile(path.join(__dirname, "../../dist/Index.html"));
+  })
+  
 
   server.use(router);
 };

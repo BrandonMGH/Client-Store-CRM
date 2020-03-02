@@ -32226,6 +32226,24 @@ var Main = function Main() {
 
 var _default = Main;
 exports.default = _default;
+},{"react":"../node_modules/react/index.js"}],"src/Login/Login.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Login = function Login() {
+  return _react.default.createElement("div", null, "Login");
+};
+
+var _default = Login;
+exports.default = _default;
 },{"react":"../node_modules/react/index.js"}],"src/App.js":[function(require,module,exports) {
 "use strict";
 
@@ -32240,19 +32258,24 @@ var _reactRouterDom = require("react-router-dom");
 
 var _Main = _interopRequireDefault(require("./Main/Main.js"));
 
+var _Login = _interopRequireDefault(require("./Login/Login.js"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /* COMPONENTS */
 var App = function App() {
   return _react.default.createElement(_reactRouterDom.BrowserRouter, null, _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
-    path: "/*",
+    path: "/",
     component: _Main.default
+  }), _react.default.createElement(_reactRouterDom.Route, {
+    path: "/login",
+    component: _Login.default
   })));
 };
 
 var _default = App;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","./Main/Main.js":"src/Main/Main.js"}],"Index.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","./Main/Main.js":"src/Main/Main.js","./Login/Login.js":"src/Login/Login.js"}],"Index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32304,7 +32327,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52218" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49441" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
